@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://cn8rqd2ghafm4"]
+
+[ext_resource type="Theme" uid="uid://brmrqhndj65ts" path="res://addons/to-do-list/themes/task-theme.tres" id="1_l2siu"]
+[ext_resource type="Script" uid="uid://dsfy4bni22043" path="res://addons/to-do-list/task/task.gd" id="2_gvko7"]
+[ext_resource type="Texture2D" uid="uid://8djefnrfaqf5" path="res://addons/to-do-list/icons/edit.png" id="2_uqyq4"]
+[ext_resource type="Texture2D" uid="uid://jjvb1vy1wy7s" path="res://addons/to-do-list/icons/x.png" id="3_uqyq4"]
+
+[node name="Task" type="Control" unique_id=2131129014]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+theme = ExtResource("1_l2siu")
+script = ExtResource("2_gvko7")
+
+[node name="Panel" type="Panel" parent="." unique_id=217785699]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=504952311]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="CheckBox" type="CheckBox" parent="HBoxContainer" unique_id=1738493018]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(32, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="TaskName" type="Label" parent="HBoxContainer" unique_id=1548619721]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Test"
+
+[node name="TaskEdit" type="Button" parent="HBoxContainer" unique_id=1517828779]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(32, 0)
+layout_mode = 2
+icon = ExtResource("2_uqyq4")
+expand_icon = true
+
+[node name="TaskDelete" type="Button" parent="HBoxContainer" unique_id=1111687852]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(32, 0)
+layout_mode = 2
+icon = ExtResource("3_uqyq4")
+expand_icon = true
+
+[connection signal="pressed" from="HBoxContainer/TaskEdit" to="." method="_on_edit_pressed"]

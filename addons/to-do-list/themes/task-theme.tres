@@ -1,0 +1,51 @@
+[gd_resource type="Theme" format=3 uid="uid://brmrqhndj65ts"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8xbs2"]
+content_margin_right = 5.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2321r"]
+content_margin_right = 5.0
+bg_color = Color(0, 0, 0, 0.09411765)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7brlg"]
+content_margin_right = 5.0
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6hwhm"]
+content_margin_right = 5.0
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rpbum"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k6ut3"]
+content_margin_left = 8.0
+bg_color = Color(0, 0, 0, 0.09411765)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qh750"]
+content_margin_left = 8.0
+bg_color = Color(0, 0, 0, 0.09411765)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3rqyf"]
+content_margin_left = 8.0
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kpsfp"]
+content_margin_left = 8.0
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_82o8d"]
+bg_color = Color(0, 0, 0, 0.1254902)
+
+[resource]
+Button/styles/focus = SubResource("StyleBoxFlat_8xbs2")
+Button/styles/hover = SubResource("StyleBoxFlat_2321r")
+Button/styles/normal = SubResource("StyleBoxFlat_7brlg")
+Button/styles/pressed = SubResource("StyleBoxFlat_6hwhm")
+CheckBox/styles/focus = SubResource("StyleBoxFlat_rpbum")
+CheckBox/styles/hover = SubResource("StyleBoxFlat_k6ut3")
+CheckBox/styles/hover_pressed = SubResource("StyleBoxFlat_qh750")
+CheckBox/styles/normal = SubResource("StyleBoxFlat_3rqyf")
+CheckBox/styles/pressed = SubResource("StyleBoxFlat_kpsfp")
+Panel/styles/panel = SubResource("StyleBoxFlat_82o8d")
