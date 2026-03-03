@@ -90,7 +90,7 @@ func _on_new_requested() -> void:
 	var dialog: AcceptDialog = AcceptDialog.new();
 	add_child(dialog);
 	
-	dialog.title = "Edit Task Name";
+	dialog.title = "New Task Name";
 	
 	var input: LineEdit = LineEdit.new();
 	input.placeholder_text = "Enter new task name...";
