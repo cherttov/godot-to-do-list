@@ -26,7 +26,7 @@ func change_name(new_name: String) -> void:
 
 # Check box pressed
 func _on_checkbox_pressed() -> void:
-	emit_signal("checkbox_changed", %CheckBox.button_pressed);
+	emit_signal("checkbox_pressed", %CheckBox.button_pressed);
 
 # Edit button pressed
 func _on_edit_pressed() -> void:
