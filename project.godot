@@ -12,7 +12,7 @@ config_version=5
 
 config/name="to-do-list"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="uid://ftl7fn7rln8d"
+config/icon="uid://c1w3whn6oj5gk"
 
 [editor_plugins]
 
