@@ -56,7 +56,7 @@ func _on_edit_requested(ref: Control) -> void:
 
 # Connected delete signal
 func _on_delete_requested(ref: Control) -> void:
-	ref.visible = false;
+	$VBoxContainer.remove_child(ref);
 	ref.queue_free();
 	save_tasks();
 
@@ -124,7 +124,7 @@ func save_tasks() -> void:
 	var data: TaskListData = TaskListData.new();
 	
 	for task in $VBoxContainer.get_children():
-		if task.has_method("change_name"):
+		if task.has_method("change_name") and not task.is_queued_for_deletion():
 			var task_info: Dictionary[String, Variant] = {
 				"name": task.task_name,
 				"completed": task.get_node("%CheckBox").button_pressed
