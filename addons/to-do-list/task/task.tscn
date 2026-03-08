@@ -42,6 +42,8 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Test"
+clip_text = true
+text_overrun_behavior = 1
 
 [node name="TaskEdit" type="Button" parent="HBoxContainer" unique_id=1517828779]
 unique_name_in_owner = true
